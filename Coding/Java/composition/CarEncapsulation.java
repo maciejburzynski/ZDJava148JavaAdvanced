@@ -1,7 +1,5 @@
 package composition;
 
-import java.awt.*;
-
 public class CarEncapsulation {
 
     public static void main(String[] args) {

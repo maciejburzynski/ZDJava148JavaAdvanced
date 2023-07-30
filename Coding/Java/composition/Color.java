@@ -17,5 +17,4 @@ public enum Color {
     public String getStringValue() {
         return stringValue;
     }
-
 }
