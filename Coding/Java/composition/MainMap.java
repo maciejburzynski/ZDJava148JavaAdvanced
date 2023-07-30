@@ -42,6 +42,14 @@ public class MainMap {
         System.out.println(stringCarMap.size());
 
 
+        Map <String, String> capitolsCountries = new HashMap<>();
+        capitolsCountries.put("Poland", "Warsaw");
+        capitolsCountries.put("Germany", "Berlin");
+        capitolsCountries.put("France", "Paris");
+        capitolsCountries.put("Madryt", "Spain");
+        capitolsCountries.put("Italy", "Rome");
+
+
 
     }
 }

@@ -35,5 +35,14 @@ public class MainArray {
             System.out.println(iCar);
 
         }
+
+        System.out.println("------------Array Length");
+        int i = cars.length;
+        System.out.println(i);
+
+
+        System.out.println("---------Array-particular element with index 1---------");
+        System.out.println(cars[1]);
+
     }
 }
