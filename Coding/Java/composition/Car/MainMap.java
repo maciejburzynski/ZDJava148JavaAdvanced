@@ -1,9 +1,10 @@
-package composition;
+package composition.Car;
+
+import composition.Car.Car;
+import composition.Car.Color;
 
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
-import java.util.Set;
 
 public class MainMap {
 // set

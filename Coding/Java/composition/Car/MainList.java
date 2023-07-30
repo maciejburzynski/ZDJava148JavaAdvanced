@@ -1,4 +1,7 @@
-package composition;
+package composition.Car;
+
+import composition.Car.Car;
+import composition.Car.Color;
 
 import java.util.ArrayList;
 import java.util.List;

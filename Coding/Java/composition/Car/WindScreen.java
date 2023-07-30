@@ -1,4 +1,4 @@
-package composition;
+package composition.Car;
 
 public class WindScreen {
     private String color;

@@ -1,4 +1,4 @@
-package composition;
+package composition.Car;
 
 public enum Color {
     RED("Red"),
