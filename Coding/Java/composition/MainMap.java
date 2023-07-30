@@ -51,5 +51,6 @@ public class MainMap {
 
         System.out.println("--------------Set of cars from map:---------------");
         System.out.println(stringCarMap.values());
+
     }
 }
