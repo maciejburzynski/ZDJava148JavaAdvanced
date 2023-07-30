@@ -63,7 +63,7 @@ public class Car {
     public String getRejestracja() {
         return rejestracja;
     }
-
+  
     public void setRejestracja(String rejestracja) {
         this.rejestracja = rejestracja;
     }
