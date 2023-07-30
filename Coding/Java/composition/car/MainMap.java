@@ -1,9 +1,9 @@
-package composition;
+package composition.car;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import static composition.Color.*;
+import static composition.car.Color.*;
 
 public class MainMap {
 // set
