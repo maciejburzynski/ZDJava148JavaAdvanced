@@ -1,8 +1,11 @@
 package composition.car;
 
+import composition.car.Car;
+import composition.car.GearBox;
+import composition.car.Type;
+import composition.car.WindScreen;
+
 import static composition.car.Color.*;
-import static composition.car.Color.BLUE;
-import static composition.car.Color.RED;
 
 public class MainArray {
 // tablica

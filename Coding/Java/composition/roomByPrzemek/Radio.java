@@ -13,6 +13,9 @@ public class Radio extends ElectronicDevice {
         this.haveUSB = haveUSB;
     }
 
+    public Radio() {
+
+    }
 
 
     //    public Radio(int price, int yearOfProduction, int energyConsumption) {

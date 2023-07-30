@@ -12,14 +12,12 @@ public class Room {
 
     private Door door;
 
-    
 
     private LightSource lightSource;
 
-    List<Inventory> inventoryList  = new ArrayList();
+    private Inventory inventory;
 
-    public Room() {
-    }
+
 
     public Room(String area, String color, boolean isWindow, Floor floor, Door door, LightSource lightSource, List<Inventory> inventoryList) {
         this.area = area;
@@ -28,11 +26,10 @@ public class Room {
         this.floor = floor;
         this.door = door;
         this.lightSource = lightSource;
-        this.inventoryList = inventoryList;
+        this.inventory = inventory;
     }
 
-    public Room(int i, String white, boolean isWindow, Floor wooden, boolean b, LightSource lightSource, Inventory inventory) {
-    }
+
 
     public String getArea() {
         return area;
@@ -82,12 +79,12 @@ public class Room {
         this.door = door;
     }
 
-    public List<Inventory> getInventoryList() {
-        return inventoryList;
+    public Inventory getInventory() {
+        return inventory;
     }
 
-    public void setInventoryList(List<Inventory> inventoryList) {
-        this.inventoryList = inventoryList;
+    public void setInventory(Inventory inventory) {
+        this.inventory = inventory;
     }
 
     @Override
@@ -99,7 +96,7 @@ public class Room {
                 ", floor=" + floor +
                 ", door=" + door +
                 ", lightSource=" + lightSource +
-                ", inventoryList=" + inventoryList +
+                ", inventoryList=" + inventory +
                 '}';
     }
 }
