@@ -56,6 +56,18 @@ public class Room {
         this.lightSource = lightSource;
     }
 
+    @Override
+    public String toString() {
+        return "Room{" +
+                "area=" + area +
+                ", color=" + color +
+                ", isWindow=" + isWindow +
+                ", floor=" + floor +
+                ", door=" + door +
+                ", lightSource=" + lightSource +
+                '}';
+    }
+
     public Room(double area, Color color, boolean isWindow, Floor floor, Door door, LightSource lightSource) {
         this.area = area;
         this.color = color;
