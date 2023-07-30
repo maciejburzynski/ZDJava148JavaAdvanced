@@ -1,9 +1,7 @@
 package composition;
 
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
-import java.util.Set;
 
 public class MainMap {
 // set
@@ -14,17 +12,17 @@ public class MainMap {
                 "Twingo",
                 "Blue",
                 "EL00100",
-                "4Y1SL65848Z411439");
+                "4Y1SL65848Z411439", gearBox, windScreen);
         Car car1 = new Car("Mazda",
                 "6",
                 "Red",
                 "EL11040",
-                "4Y1SL65848Z411435");
+                "4Y1SL65848Z411435", gearBox, windScreen);
         Car car2 = new Car("Mercedes",
                 "GLE",
                 "Black",
                 "EL12100",
-                "4Y1SL65848Z411432");
+                "4Y1SL65848Z411432", gearBox, windScreen);
 
 
         Map<String, Car> stringCarMap = new HashMap<>();

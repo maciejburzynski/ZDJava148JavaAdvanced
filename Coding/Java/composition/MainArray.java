@@ -1,9 +1,6 @@
 package composition;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.awt.*;
 
 public class MainArray {
 // tablica
@@ -14,17 +11,23 @@ public class MainArray {
                 "Twingo",
                 "Blue",
                 "EL00100",
-                "4Y1SL65848Z411439");
+                "4Y1SL65848Z411439",
+                new GearBox("Bosch", 5, Type.MANUAL),
+                new WindScreen("Blue", 20000, "Szybpol") );
         Car car1 = new Car("Mazda",
                 "6",
                 "Red",
                 "EL11040",
-                "4Y1SL65848Z411435");
+                "4Y1SL65848Z411435",
+                new GearBox("Makita", 6, Type.MANUAL),
+                new WindScreen("Black", 100000, "JapGlass") );
         Car car2 = new Car("Mercedes",
                 "GLE",
                 "Black",
                 "EL12100",
-                "4Y1SL65848Z411432");
+                "4Y1SL65848Z411432",
+                new GearBox("Bosch", 5, Type.AUTO),
+                new WindScreen("Clear", 30000, "SzybenMachen") );
 
 //      Putting cars into Array and displaying
         Car[] cars = {car, car1, car2};

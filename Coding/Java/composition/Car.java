@@ -2,21 +2,25 @@ package composition;
 
 public class Car {
 
-    String make;
-    String model;
-    String color;
-    String registration;
-    String vin;
+    private String make;
+    private String model;
+    private String color;
+    private String registration;
+    private String vin;
 
+    private GearBox gearBox;
+    private WindScreen windScreen;
     public Car() {
     }
 
-    public Car(String make, String model, String color, String registration, String vin) {
+    public Car(String make, String model, String color, String registration, String vin, GearBox gearBox, WindScreen windScreen) {
         this.make = make;
         this.model = model;
         this.color = color;
         this.registration = registration;
         this.vin = vin;
+        this.gearBox = gearBox;
+        this.windScreen = windScreen;
     }
 
     @Override
