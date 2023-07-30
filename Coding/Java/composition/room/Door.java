@@ -3,7 +3,7 @@ package composition.room;
 public class Door {
 
     private int size;
-    private DoorMaterial doorMaterial;
+    private composition.room.DoorMaterial doorMaterial;
 
     public Door(int size, DoorMaterial doorMaterial) {
         this.size = size;

@@ -10,6 +10,10 @@ public class Main {
                 new Door(70, DoorMaterial.WOODEN),
                 LightSource.LEDS);
 
+
         System.out.println(livingRoom);
+
+
+
     }
 }

@@ -6,4 +6,5 @@ public enum LightSource {
     LEDS,
     CHANDELIER,
     FLUORESCENT_LAMP
-}
+
+    }
