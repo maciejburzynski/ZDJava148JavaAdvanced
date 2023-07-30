@@ -1,6 +1,6 @@
-package composition;
+package composition.car;
 
-import static composition.Color.*;
+import static composition.car.Color.*;
 
 public class CarEncapsulation {
 
