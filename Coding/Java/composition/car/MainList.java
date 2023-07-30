@@ -1,14 +1,12 @@
-package composition;
+package composition.car;
 
-import static composition.Color.*;
-import static composition.Color.BLUE;
-import static composition.Color.RED;
+import java.util.ArrayList;
+import java.util.List;
 
-public class MainArray {
-// tablica
+import static composition.car.Color.*;
 
+public class MainList {
     public static void main(String[] args) {
-//      Create 3 cars
         Car car = new Car("Renault",
                 "Twingo",
                 BLUE.getStringValue(),
@@ -43,22 +41,28 @@ public class MainArray {
                         "Pilkington",
                         25000));
 
-//      Putting cars into Array and displaying
-        Car[] cars = {car, car1, car2};
+        //      Creating List and putting cars into them
+        List<Car> carsList = new ArrayList();
+        carsList.add(car);
+        carsList.add(car1);
+        carsList.add(car2);
 
+        System.out.println("------------List size: -----------------");
+        System.out.println(carsList.size());
 
-        System.out.println("------------Array-----------------");
-        for (Car iCar : cars) {
-            System.out.println(iCar);
-
+        System.out.println("------------Does list contain car1?-----------------");
+        if (carsList.contains(car1)) {
+            System.out.println("Jest byczQ!");
+        } else {
+            System.out.println("Nie ma byczQ!");
         }
-        System.out.println("------------Array length-----------------");
-        int i = cars.length;
-        System.out.println(i);
 
+        System.out.println("------------Particular car with index 0: (first element) -----------------");
+        System.out.println(carsList.get(0));
 
-        System.out.println("------------Array - particular element with index 1 -----------------");
-        System.out.println(cars[1]);
-
+        System.out.println("------------Whole List-----------------");
+        for (Car lCars : carsList) {
+            System.out.println(lCars);
+        }
     }
 }
