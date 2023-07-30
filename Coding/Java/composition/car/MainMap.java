@@ -1,9 +1,9 @@
-package composition;
+package composition.car;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import static composition.Color.*;
+import static composition.car.Color.*;
 
 public class MainMap {
 // set
@@ -51,7 +51,7 @@ public class MainMap {
         stringCarMap.put("Andrzej", car2);
 
         System.out.println("--------------Map---------------");
-        System.out.println("--------------Maciej's car is:---------------");
+        System.out.println("--------------Maciej's composition.car is:---------------");
         System.out.println(stringCarMap.get("Maciej"));
 
         System.out.println("--------------Map's size is equal to:---------------");

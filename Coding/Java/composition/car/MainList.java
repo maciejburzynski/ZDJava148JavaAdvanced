@@ -1,9 +1,9 @@
-package composition;
+package composition.car;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static composition.Color.*;
+import static composition.car.Color.*;
 
 public class MainList {
     public static void main(String[] args) {
@@ -57,7 +57,7 @@ public class MainList {
             System.out.println("Nie ma byczQ!");
         }
 
-        System.out.println("------------Particular car with index 0: (first element) -----------------");
+        System.out.println("------------Particular composition.car with index 0: (first element) -----------------");
         System.out.println(carsList.get(0));
 
         System.out.println("------------Whole List-----------------");
