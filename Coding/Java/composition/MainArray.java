@@ -30,10 +30,14 @@ public class MainArray {
         Car[] cars = {car, car1, car2};
 
 
+
         System.out.println("------------Array-----------------");
         for (Car iCar : cars) {
             System.out.println(iCar);
 
         }
+        System.out.println("------------Array length------------");
+        int i = cars.length;
+        System.out.println(i);
     }
 }
