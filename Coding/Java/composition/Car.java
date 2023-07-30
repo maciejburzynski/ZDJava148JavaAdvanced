@@ -9,20 +9,30 @@ public class Car {
 
     private String make;
     private String model;
-    private Color color;
+    private String color;
     private String registration;
     private String vin;
+    private GearBox gearBox;
+    private WindScreen windScreen;
 
 
     public Car() {
     }
 
-    public Car(String make, String model, Color color, String registration, String vin) {
+    public Car(String make,
+               String model,
+               String color,
+               String registration,
+               String vin,
+               GearBox gearBox,
+               WindScreen windScreen) {
         this.make = make;
         this.model = model;
         this.color = color;
         this.registration = registration;
         this.vin = vin;
+        this.gearBox = gearBox;
+        this.windScreen = windScreen;
     }
 
 
@@ -42,11 +52,11 @@ public class Car {
         this.model = model;
     }
 
-    public Color getColor() {
+    public String getColor() {
         return color;
     }
 
-    public void setColor(Color color) {
+    public void setColor(String color) {
         this.color = color;
     }
 
