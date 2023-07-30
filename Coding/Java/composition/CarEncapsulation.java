@@ -1,13 +1,22 @@
 package composition;
 
+import static composition.Color.*;
+
 public class CarEncapsulation {
 
     public static void main(String[] args) {
+
         Car car = new Car("Renault",
                 "Twingo",
-                Color.BLUE,
+                BLUE.getStringValue(),
                 "EL00100",
-                "4Y1SL65848Z411439");
+                "4Y1SL65848Z411439",
+                new GearBox("Bosch",
+                        5,
+                        Type.MANUAL),
+                new WindScreen(BLUE.getStringValue(),
+                        "Pilkington",
+                        20000));
 
 
         System.out.println("Before: ");
@@ -17,7 +26,7 @@ public class CarEncapsulation {
         System.out.println("2...");
         System.out.println("1...");
         System.out.println("After: ");
-        car.setColor(Color.ORANGE);
+        car.setColor(ORANGE.getStringValue());
         System.out.println(car.getColor());
 
 
