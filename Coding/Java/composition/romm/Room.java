@@ -1,4 +1,4 @@
-package exercises.rommExercise;
+package composition.romm;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -89,6 +89,17 @@ public class Room {
     public void setInventoryList(List<Inventory> inventoryList) {
         this.inventoryList = inventoryList;
     }
-    
-    
+
+    @Override
+    public String toString() {
+        return "Room{" +
+                "area='" + area + '\'' +
+                ", color='" + color + '\'' +
+                ", isWindow=" + isWindow +
+                ", floor=" + floor +
+                ", door=" + door +
+                ", lightSource=" + lightSource +
+                ", inventoryList=" + inventoryList +
+                '}';
+    }
 }

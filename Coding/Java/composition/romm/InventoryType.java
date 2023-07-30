@@ -1,8 +1,4 @@
-package exercises.rommExercise;
-
-import exercises.rommExercise.ElectronicDevice;
-import exercises.rommExercise.Radio;
-import exercises.rommExercise.Television;
+package composition.romm;
 
 public enum InventoryType {
     TV(new Television()),

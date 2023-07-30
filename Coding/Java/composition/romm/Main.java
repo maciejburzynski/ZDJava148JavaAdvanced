@@ -1,4 +1,4 @@
-package exercises.rommExercise;
+package composition.romm;
 
 public class Main {
 
@@ -9,6 +9,9 @@ public class Main {
                 true,
                 new LightSource(8, BulbType.LED_BULBS, 43),
                 new Inventory(2,250, InventoryType.RADIO));
+
+
+        System.out.println(room.toString());
 
     }
 }

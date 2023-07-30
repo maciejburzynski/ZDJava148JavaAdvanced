@@ -1,4 +1,4 @@
-package exercises.rommExercise;
+package composition.romm;
 
 public enum Floor {
     WOODEN, CERAMIC, LAMINATED, CARPET;

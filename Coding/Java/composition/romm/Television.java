@@ -1,4 +1,4 @@
-package exercises.rommExercise;
+package composition.romm;
 
 public class Television extends ElectronicDevice {
     private boolean isHD;
