@@ -1,0 +1,3 @@
+- Streamy są leniwe
+- Streamy nie przechowują stanu
+...
