@@ -10,17 +10,17 @@ public class MainSet {
 //      Create 3 cars
         Car car = new Car("Renault",
                 "Twingo",
-                "Blue",
+                Color.BLUE,
                 "EL00100",
                 "4Y1SL65848Z411439");
         Car car1 = new Car("Mazda",
                 "6",
-                "Red",
+                Color.RED,
                 "EL11040",
                 "4Y1SL65848Z411435");
         Car car2 = new Car("Mercedes",
                 "GLE",
-                "Black",
+                Color.BLACK,
                 "EL12100",
                 "4Y1SL65848Z411432");
 

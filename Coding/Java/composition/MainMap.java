@@ -12,17 +12,17 @@ public class MainMap {
 //      Create 3 cars
         Car car = new Car("Renault",
                 "Twingo",
-                "Blue",
+                Color.BLUE,
                 "EL00100",
                 "4Y1SL65848Z411439");
         Car car1 = new Car("Mazda",
                 "6",
-                "Red",
+                Color.RED,
                 "EL11040",
                 "4Y1SL65848Z411435");
         Car car2 = new Car("Mercedes",
                 "GLE",
-                "Black",
+                Color.BLACK,
                 "EL12100",
                 "4Y1SL65848Z411432");
 
@@ -51,5 +51,19 @@ public class MainMap {
 
         System.out.println("--------------Set of cars from map:---------------");
         System.out.println(stringCarMap.values());
+
+        System.out.println("--------------Country-Capitol map---------------");
+        Map<String, String> capitolsCountriesMap = new HashMap<>();
+        capitolsCountriesMap.put("Poland", "Warsaw");
+        capitolsCountriesMap.put("Germany", "Berlin");
+        capitolsCountriesMap.put("France", "Paris");
+
+        System.out.println("--------------Capitol of Poland is:---------------");
+        System.out.println(capitolsCountriesMap.get("Poland"));
+
+
+
+
+
     }
 }
