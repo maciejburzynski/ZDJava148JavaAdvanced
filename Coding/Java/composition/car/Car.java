@@ -10,7 +10,7 @@ public class Car {
     private String make;
     private String model;
     private String color;
-    private String registration;
+    private String rejestracja;
     private String vin;
     private GearBox gearBox;
     private WindScreen windScreen;
@@ -22,14 +22,14 @@ public class Car {
     public Car(String make,
                String model,
                String color,
-               String registration,
+               String rejestracja,
                String vin,
                GearBox gearBox,
                WindScreen windScreen) {
         this.make = make;
         this.model = model;
         this.color = color;
-        this.registration = registration;
+        this.rejestracja = rejestracja;
         this.vin = vin;
         this.gearBox = gearBox;
         this.windScreen = windScreen;
@@ -60,12 +60,12 @@ public class Car {
         this.color = color;
     }
 
-    public String getRegistration() {
-        return registration;
+    public String getRejestracja() {
+        return rejestracja;
     }
 
-    public void setRegistration(String registration) {
-        this.registration = registration;
+    public void setRejestracja(String rejestracja) {
+        this.rejestracja = rejestracja;
     }
 
     public String getVin() {
@@ -82,7 +82,7 @@ public class Car {
                 "make='" + make + '\'' +
                 ", model='" + model + '\'' +
                 ", color='" + color + '\'' +
-                ", registration='" + registration + '\'' +
+                ", registration='" + rejestracja + '\'' +
                 ", vin='" + vin + '\'' +
                 '}';
     }
