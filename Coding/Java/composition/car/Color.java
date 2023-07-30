@@ -1,4 +1,4 @@
-package composition;
+package composition.car;
 
 public enum Color {
     RED("Red"),

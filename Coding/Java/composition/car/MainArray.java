@@ -1,12 +1,11 @@
-package composition;
+package composition.car;
 
-import java.util.HashSet;
-import java.util.Set;
+import static composition.car.Color.*;
+import static composition.car.Color.BLUE;
+import static composition.car.Color.RED;
 
-import static composition.Color.*;
-
-public class MainSet {
-// set
+public class MainArray {
+// tablica
 
     public static void main(String[] args) {
 //      Create 3 cars
@@ -44,31 +43,22 @@ public class MainSet {
                         "Pilkington",
                         25000));
 
-
-        Set<Car> carSet = new HashSet<>();
-        carSet.add(car);
-        carSet.add(car);
-        carSet.add(car1);
-        carSet.add(car2);
-
-        System.out.println("------------Set-----------------");
-        System.out.println("------------Whole set:-----------------");
-        System.out.println(carSet);
-
-        System.out.println("------------Does set contain Car2?-----------------");
-        System.out.println(carSet.contains(car2));
-
-        System.out.println("------------Can we remove Car? if true, will be removed-----------------");
-        System.out.println(carSet.remove(car));
-
-        System.out.println("------------Please clear and display empty carSet-----------------");
-        carSet.clear();
-        System.out.println(carSet);
+//      Putting cars into Array and displaying
+        Car[] cars = {car, car1, car2};
 
 
-// no get() method
-// no order
-// no duplicates
+        System.out.println("------------Array-----------------");
+        for (Car iCar : cars) {
+            System.out.println(iCar);
+
+        }
+        System.out.println("------------Array length-----------------");
+        int i = cars.length;
+        System.out.println(i);
+
+
+        System.out.println("------------Array - particular element with index 1 -----------------");
+        System.out.println(cars[1]);
 
     }
 }
