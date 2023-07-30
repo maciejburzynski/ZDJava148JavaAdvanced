@@ -1,4 +1,4 @@
-package composition.romm;
+package composition.roomByPrzemek;
 
 public enum Floor {
     WOODEN, CERAMIC, LAMINATED, CARPET;

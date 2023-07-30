@@ -1,4 +1,4 @@
-package composition.romm;
+package composition.roomByPrzemek;
 
 public class ElectronicDevice {
     private int price;

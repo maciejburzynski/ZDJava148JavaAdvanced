@@ -1,8 +1,10 @@
-package composition.romm;
+package composition.roomByPrzemek;
 
 public enum InventoryType {
     TV(new Television()),
     RADIO(new Radio());
+
+
 
     private final ElectronicDevice device;
 

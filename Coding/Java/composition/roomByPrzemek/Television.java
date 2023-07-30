@@ -1,4 +1,4 @@
-package composition.romm;
+package composition.roomByPrzemek;
 
 public class Television extends ElectronicDevice {
     private boolean isHD;

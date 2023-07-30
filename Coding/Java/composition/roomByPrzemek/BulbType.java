@@ -1,4 +1,4 @@
-package composition.romm;
+package composition.roomByPrzemek;
 
 public enum BulbType {
     INCANDESCENT_BULBS, HALOGEN_BULBS, FLUORESCENT_BULBS, LED_BULBS;

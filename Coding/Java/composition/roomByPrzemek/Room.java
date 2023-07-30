@@ -1,4 +1,4 @@
-package composition.romm;
+package composition.roomByPrzemek;
 
 import java.util.ArrayList;
 import java.util.List;

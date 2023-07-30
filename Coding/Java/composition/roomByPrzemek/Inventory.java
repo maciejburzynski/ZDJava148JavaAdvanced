@@ -1,4 +1,4 @@
-package composition.romm;
+package composition.roomByPrzemek;
 
 
 import java.util.Collection;
@@ -18,6 +18,12 @@ public  class Inventory implements List<Inventory> {
         this.price = price;
         this.ineventoryType = ineventoryType;
     }
+
+    public Inventory(int quantity, int price, InventoryType radio, Radio radio1) {
+    }
+    public Inventory(int quantity, int price, InventoryType television, Television television1) {
+    }
+
 
     @Override
     public int size() {

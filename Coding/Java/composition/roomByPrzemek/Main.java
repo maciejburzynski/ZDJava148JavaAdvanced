@@ -1,4 +1,4 @@
-package composition.romm;
+package composition.roomByPrzemek;
 
 public class Main {
 
@@ -8,7 +8,7 @@ public class Main {
                 true, Floor.WOODEN,
                 true,
                 new LightSource(8, BulbType.LED_BULBS, 43),
-                new Inventory(2,250, InventoryType.RADIO));
+                new Inventory(2,250, InventoryType.RADIO, new Radio(2007, 54, 40, true, true)));
 
 
         System.out.println(room.toString());
