@@ -1,17 +1,23 @@
 package composition;
 
-public class Car {
 
-   private String make;
+public class Car {
+// protected
+// public
+// private
+// package-private - by default if no there is no modifier
+
+    private String make;
     private String model;
-    private String color;
+    private Color color;
     private String registration;
     private String vin;
+
 
     public Car() {
     }
 
-    public Car(String make, String model, String color, String registration, String vin) {
+    public Car(String make, String model, Color color, String registration, String vin) {
         this.make = make;
         this.model = model;
         this.color = color;
@@ -36,11 +42,11 @@ public class Car {
         this.model = model;
     }
 
-    public String getColor() {
+    public Color getColor() {
         return color;
     }
 
-    public void setColor(String color) {
+    public void setColor(Color color) {
         this.color = color;
     }
 

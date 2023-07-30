@@ -1,11 +1,12 @@
 package composition;
 
 public enum Color {
-    RED("Red");
-    BLUE("Blue");
-    WHITE("White");
-    GREEN("Green");
-    BLACK("Black");
+    RED("Red"),
+    BLUE("Blue"),
+    WHITE("White"),
+    GREEN("Green"),
+    BLACK("Black"),
+    ORANGE("Orange");
 
     private String stringValue;
 
