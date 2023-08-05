@@ -1,10 +1,5 @@
 package player;
 
-import inheritance.Automobile;
-import inheritance.Bus;
-import inheritance.FourWheeler;
-import inheritance.Truck;
-
 import java.util.ArrayList;
 import java.util.List;
 
