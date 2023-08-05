@@ -11,6 +11,11 @@ import java.util.stream.Collectors;
 
 import static composition.car.Color.*;
 
+/* Streams
+ * - cleaner code
+ * - streams are lazy but it is positive for aplication's performance
+ * */
+
 public class Main {
     public static void main(String[] args) {
         Car car7 = new Car("Renault",
@@ -110,7 +115,7 @@ public class Main {
 //        Oldschool
 
         for (Car car : carList) {
-            if (car.getColor().equals(BLACK.getStringValue())) {
+            if (isBlack(car)) {
                 blackCars.add(car);
             }
         }
@@ -123,11 +128,15 @@ public class Main {
 
         List<Car> blackCarsUsingStream = carList
                 .stream()
-                .filter(car -> car.getColor().equals(BLACK.getStringValue()))
+                .filter(Main::isBlack) // alt+enter - zmienia z car -> isBlack(car)
                 .collect(Collectors.toList());
 
         System.out.println("Black cars using streams: ");
         System.out.println(blackCarsUsingStream);
+    }
+
+    private static boolean isBlack(Car car) {
+        return car.getColor().equals(BLACK.getStringValue());
     }
 }
 

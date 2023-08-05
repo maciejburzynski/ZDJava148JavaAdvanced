@@ -1,11 +1,21 @@
 package composition.car;
 
 import static composition.car.Color.*;
-import static composition.car.Color.BLUE;
-import static composition.car.Color.RED;
 
 public class MainArray {
-// tablica
+    /*
+
+    array - tablica
+
+    pros:
+    - fast
+    cons:
+    - not too many methods
+    - not able to stream through arrays without conversion to array
+    - working with array is not intuitive
+    - not flexible  - you have to define size
+
+    */
 
     public static void main(String[] args) {
 //      Create 3 cars
@@ -46,19 +56,15 @@ public class MainArray {
 //      Putting cars into Array and displaying
         Car[] cars = {car, car1, car2};
 
-
         System.out.println("------------Array-----------------");
         for (Car iCar : cars) {
             System.out.println(iCar);
-
         }
         System.out.println("------------Array length-----------------");
         int i = cars.length;
         System.out.println(i);
 
-
         System.out.println("------------Array - particular element with index 1 -----------------");
         System.out.println(cars[1]);
-
     }
 }

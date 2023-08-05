@@ -5,6 +5,16 @@ import java.util.Set;
 
 import static composition.car.Color.*;
 
+/*
+
+    set - tablica
+
+    - no get() method
+    - no order
+    - no duplicates
+    - fast and effectiveness
+
+    */
 public class MainSet {
 // set
 
@@ -66,9 +76,7 @@ public class MainSet {
         System.out.println(carSet);
 
 
-// no get() method
-// no order
-// no duplicates
+
 
     }
 }

@@ -5,8 +5,18 @@ import java.util.Map;
 
 import static composition.car.Color.*;
 
+/*
+
+    map - mapa
+
+    -
+    -
+    -
+    -
+
+    */
+
 public class MainMap {
-// set
 
     public static void main(String[] args) {
 //      Create 3 cars

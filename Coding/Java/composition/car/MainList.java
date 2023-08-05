@@ -5,6 +5,18 @@ import java.util.List;
 
 import static composition.car.Color.*;
 
+/*
+
+    Lista
+
+    pros:
+    - is ordered
+    - duplicates allowed
+    - a bit slower than array
+    - is flexible - you don't have to define size
+
+    */
+
 public class MainList {
     public static void main(String[] args) {
         Car car = new Car("Renault",
