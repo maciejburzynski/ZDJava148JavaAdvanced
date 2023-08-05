@@ -7,6 +7,7 @@ import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
+
         List<Lumper> lumpers = new ArrayList<>();
         lumpers.add(new Lumper(1100, true, Size.SMALL));
         lumpers.add(new Lumper(1600, false, Size.MEDIUM));
@@ -25,8 +26,8 @@ public class Main {
         garages.add(new Garage(12.0, 3.0, 4.0, false, true, false, 7, lumpers3));
 
 
+
         List<Garage> filteredGarages = new ArrayList<>();
-        List<Garage> filteredGaragesLoop = new ArrayList<>();
         for (Garage garage : garages) {
             if (garage.isHeated() && garage.getParkingSpace() >= 2 && !garage.isWindowed()) {
                 double lumpersValue = garage.getLumpers().stream()
@@ -34,7 +35,7 @@ public class Main {
                         .mapToDouble(Lumper::getValue)
                         .sum();
                 if (lumpersValue > 1500) {
-                    filteredGaragesLoop.add(garage);
+                    filteredGarages.add(garage);
                 }
 
 
@@ -61,7 +62,7 @@ public class Main {
                 .sorted(Comparator.comparingDouble(Lumper::getValue).reversed())
                 .collect(Collectors.toList());
         System.out.println("Filtered Garages (Loop):");
-        for (Garage garage : filteredGaragesLoop) {
+        for (Garage garage : filteredGarages) {
             System.out.println("Garage: " + garage.getParkingSpace() + " parking spaces");
         }
 
