@@ -4,8 +4,11 @@ import inheritance.car.FourWheeler;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Predicate;
+
+
 
 public class Anonymous {
 
@@ -60,6 +63,15 @@ public class Anonymous {
                 .forEach(element -> System.out.println(element));
 
     }
+
+
+    Consumer<String> consumer = new Consumer<String>() {
+        @Override
+        public void accept(String s) {
+            System.out.println(s);
+
+        }
+    };
 
 
 }
