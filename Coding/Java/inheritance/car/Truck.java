@@ -1,4 +1,4 @@
-package inheritance;
+package inheritance.car;
 
 public class Truck implements FourWheeler {
 

@@ -90,7 +90,7 @@ public class Main {
 
         System.out.println("Garages with no window ");
         List<Garage> noWindowGarages = allGarages.stream()
-                .filter(garage -> garage.getWindow() == false)  // Predicate -> gets object, returns boolean
+                .filter(Main::garageWithoutWindow)  // Predicate -> gets object, returns boolean
                 .collect(toList());
         System.out.println(noWindowGarages);
 
@@ -120,4 +120,8 @@ public class Main {
 
 
     }
+    private static boolean garageWithoutWindow(Garage garage) {
+        return garage.getWindow() == false;
+    }
+
 }
