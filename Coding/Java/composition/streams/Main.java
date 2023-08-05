@@ -13,6 +13,12 @@ import static composition.car.Color.*;
 import static composition.car.Color.BLACK;
 
 public class Main {
+//  Streams
+    /*
+    - Streams are lazy, but it is positive for application performance
+    - cleaner code
+     */
+
     public static void main(String[] args) {
         Car car7 = new Car("Renault",
                 "Twingo",
@@ -107,9 +113,9 @@ public class Main {
         System.out.println(carList);
 
 
-        List<Car> blackCars = new ArrayList<>();
 
 // Old school
+        List<Car> blackCars = new ArrayList<>();
         for (Car car : carList) {
             if (car.getColor().equals(BLACK.getStringValue())) {
                 blackCars.add(car);
@@ -122,12 +128,13 @@ public class Main {
 //  New school
         List<Car> blackCarsUsingStream = carList
                 .stream()
-                .filter(car -> car.getColor()
-                        .equals(BLACK.getStringValue()))
+                .filter(car -> car.getColor().equals(BLACK.getStringValue()))
                 .collect(Collectors.toList());
 
+        blackCarsUsingStream.get(0);
         System.out.println("Black cars using streams: ");
         System.out.println(blackCarsUsingStream);
 
     }
+
 }

@@ -6,7 +6,9 @@ import java.util.Map;
 import static composition.car.Color.*;
 
 public class MainMap {
-// set
+// map
+
+
 
     public static void main(String[] args) {
 //      Create 3 cars

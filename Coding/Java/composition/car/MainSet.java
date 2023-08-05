@@ -7,7 +7,14 @@ import static composition.car.Color.*;
 
 public class MainSet {
 // set
+/*
 
+- no get() method
+- no order
+- no duplicates
+
+- fast
+ */
     public static void main(String[] args) {
 //      Create 3 cars
         Car car = new Car("Renault",
@@ -64,11 +71,6 @@ public class MainSet {
         System.out.println("------------Please clear and display empty carSet-----------------");
         carSet.clear();
         System.out.println(carSet);
-
-
-// no get() method
-// no order
-// no duplicates
 
     }
 }
