@@ -4,6 +4,7 @@ import inheritance.car.FourWheeler;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Predicate;
 
@@ -18,48 +19,88 @@ public class Anonymous {
     };
 
     public static void main(String[] args) {
-        List<String> stringList = Arrays.asList("Maciej",
+        List<String> stringList = Arrays.asList(
+                "Maciej",
                 "Jarek",
                 "Andrzej",
                 "Jakub",
                 "Bartek",
                 "Inesa");
-
-        Function function = new Function() {
+// Custom function instead lambda - extended lambda
+        Function<String, String> function = new Function<String, String>() {
             @Override
-            public Object apply(Object o) {
-                return o.toString().toLowerCase();
+            public String apply(String s) {
+                return s.toLowerCase();
             }
         };
-
-        stringList.stream()
-                .map(string -> string.toLowerCase())
-                .forEach(string -> System.out.println(string));
 
         stringList.stream()
                 .map(function)
                 .forEach(string -> System.out.println(string));
 
 
-        Predicate predicate = new Predicate() {
+//      Lambda
+        stringList.stream()
+                .map(string -> string.toLowerCase())
+                .forEach(string -> System.out.println(string));
+
+
+//      Method reference
+        stringList.stream()
+                .map(String::toLowerCase)
+                .forEach(System.out::println);
+
+
+//      Custom Predicate used to filter
+        Predicate<String> predicate = new Predicate<String>() {
             @Override
-            public boolean test(Object o) {
-                return o.toString().contains("Bartek");
+            public boolean test(String string) {
+                return string.contains("Bartek");
             }
         };
-
-
-
-        stringList.stream()
-                .filter(string -> string.contains("Bartek"))
-                .forEach(element -> System.out.println(element));
-
 
         stringList.stream()
                 .filter(predicate)
                 .forEach(element -> System.out.println(element));
 
+//      Lambda
+        stringList.stream()
+                .filter(string -> string.contains("Bartek"))
+                .forEach(element -> System.out.println(element));
+
+//      Method Reference
+        stringList.stream()
+                .filter(Anonymous::verifyIfContainsBartek)
+                .forEach(element -> System.out.println(element));
+
+
+//      Anonymous
+        Consumer<String> consumer = new Consumer<String>() {
+            @Override
+            public void accept(String s) {
+                System.out.println(s);
+            }
+        };
+
+        stringList.stream()
+                .forEach(new Consumer<String>() {
+                    @Override
+                    public void accept(String s) {
+                        System.out.println(s);
+                    }
+                });
+
+//      Lambda
+        stringList.stream()
+                .forEach(string -> System.out.println(string));
+
+//      Method reference
+        stringList.stream()
+                .forEach(System.out::println);
     }
 
 
+    private static boolean verifyIfContainsBartek(String string) {
+        return string.contains("Bartek");
+    }
 }
