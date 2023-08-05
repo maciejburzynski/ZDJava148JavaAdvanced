@@ -1,4 +1,4 @@
-package inheritance;
+package inheritance.car;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,7 +6,7 @@ import java.util.List;
 public class MainInterface {
     public static void main(String[] args) {
 // Interface name = new ClassImplementingInterface()
-        
+
         List<String> stringList = new ArrayList<>();
         ArrayList<String> stringArrayList = new ArrayList<>();
 

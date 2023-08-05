@@ -1,4 +1,6 @@
-package inheritance;
+package inheritance.car;
+
+import inheritance.player.Playable;
 
 public class Bus implements FourWheeler {
 
@@ -6,4 +8,5 @@ public class Bus implements FourWheeler {
     public void drive() {
         System.out.println("I am driving a bus!");
     }
+
 }
