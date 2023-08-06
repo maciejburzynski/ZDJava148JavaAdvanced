@@ -1,4 +1,4 @@
-package classes.exceptions;
+package classes.exceptions.Room;
 
 public class ColorNotWashableException extends Exception {
 

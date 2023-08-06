@@ -1,8 +1,6 @@
-package classes.exceptions;
+package classes.exceptions.Room;
 
 import composition.room.Color;
-
-import java.sql.SQLOutput;
 
 public class Main {
 

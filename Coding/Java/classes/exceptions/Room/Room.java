@@ -1,4 +1,4 @@
-package classes.exceptions;
+package classes.exceptions.Room;
 
 import composition.room.Color;
 
