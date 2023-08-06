@@ -38,11 +38,14 @@ public class Main {
                 .collect(Collectors.toSet());
 
         System.out.println("Exception: ");
+//        carOptional.orElseThrow(() -> new CarNotFoundException("Car not found"));
+
         carOptional.orElseThrow(() -> new CarNotFoundException("Car not found"));
+        carOptional.ifPresentOrElse(a -> a.drive(), () -> {
+            throw new CarNotFoundException("ifPresentOrElse car not found");});
+// Try catch is not required because we throw Exception extending RuntimeException
 
 
-        carOptional.ifPresentOrElse(a -> a.drive(),
-                        () -> new CarNotFoundException("ifPresentOrElse car not found"));
     }
 }
 
