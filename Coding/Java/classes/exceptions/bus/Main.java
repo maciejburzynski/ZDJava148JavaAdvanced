@@ -22,7 +22,6 @@ public class Main {
             System.out.println(exception.getMessage());
         } finally {
             System.out.println("I am going to buy it anyway!");
-
         }
 
 
