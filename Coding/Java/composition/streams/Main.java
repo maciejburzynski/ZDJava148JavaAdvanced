@@ -61,7 +61,7 @@ public class Main {
 
         Car car4 = new Car("Renault",
                 "Clio",
-                BLUE.getStringValue(),
+                BLACK.getStringValue(),
                 "ES22123",
                 "4Y1SL65848Z411437",
                 new GearBox("Bosch",
@@ -128,6 +128,15 @@ public class Main {
 
         System.out.println("Black cars using streams: ");
         System.out.println(blackCarsUsingStream);
+
+        System.out.println("multifilter");
+        List<Car> multifilteredCar = carList
+                .stream()
+                .filter(car ->  car.getColor().equals(BLACK.getStringValue())
+                        && car.getMake().equals("Renault"))
+                .collect(Collectors.toList());
+
+        System.out.println(multifilteredCar);
 
     }
 }
