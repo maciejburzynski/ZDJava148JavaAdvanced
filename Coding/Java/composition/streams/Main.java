@@ -42,7 +42,7 @@ public class Main {
                         22000));
         Car car2 = new Car("Mercedes",
                 "GLE",
-                BLACK.getStringValue(),
+                RED.getStringValue(),
                 "EL12100",
                 "4Y1SL65848Z411432",
                 new GearBox("Bosch",
@@ -133,6 +133,15 @@ public class Main {
 
         System.out.println("Black cars using streams: ");
         System.out.println(blackCarsUsingStream);
+
+        System.out.println("Multifilter:");
+//        Jeśli dwa warunki w lambdzie to w nawiasie {} (i przypomina to wtedy klasę anonimową)
+        carList.stream()
+                .filter(car -> {
+                    return car.getMake().equals("Mercedes")
+                            && car.getColor().equals(BLACK.getStringValue());
+                })
+                .forEach(car -> System.out.println(car));
     }
 
     private static boolean isBlack(Car car) {
