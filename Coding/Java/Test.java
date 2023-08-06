@@ -1,5 +1,8 @@
 public class Test {
-    public static void main(String[] args) {
-        System.out.println("Hello ZDJava148!");
+    int i = 30;
+
+    class InnerClass{
+
+
     }
 }
