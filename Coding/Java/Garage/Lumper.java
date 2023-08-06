@@ -5,7 +5,6 @@ public class Lumper {
     private boolean isBroken;
     private Size size;
 
-
     public Lumper(double estimatedValue, boolean isBroken, Size size) {
         this.estimatedValue = estimatedValue;
         this.isBroken = isBroken;
