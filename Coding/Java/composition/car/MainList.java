@@ -1,9 +1,22 @@
 package composition.car;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 import static composition.car.Color.*;
+
+// List
+/*
+- is ordered
+- duplicates allowed
+- list is a bit slower than Array
+- is flexible - you don't have to define size 
+
+- The most popular is ArrayList. Also worth to think about LinkedList
+
+ */
+
 
 public class MainList {
     public static void main(String[] args) {
@@ -42,7 +55,7 @@ public class MainList {
                         25000));
 
         //      Creating List and putting cars into them
-        List<Car> carsList = new ArrayList();
+        List<Car> carsList = new ArrayList<>();
         carsList.add(car);
         carsList.add(car1);
         carsList.add(car2);
