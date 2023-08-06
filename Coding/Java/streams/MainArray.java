@@ -127,7 +127,20 @@ public class MainArray {
                 .collect(Collectors.toList());
 
         System.out.println(blackCarsUsingStream);
-    }
+
+//        List <Car> multiFiltered = carList
+//                .stream()
+//                .filter(carrr->{
+//                    return  carrr.getMake().equals("Renault")
+//                            && carrr.getColor().equals(BLACK.getStringValue());
+//                }
+//                )
+//                .forEach(carrr-> System.out.println(carrr));
+//    }
+//
+
+
+
 
 }
 
