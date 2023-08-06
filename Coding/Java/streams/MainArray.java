@@ -123,7 +123,7 @@ public class MainArray {
 //        }
 
         List<Car> blackCarsUsingStream = carList.stream()
-                .filter(carrr->car.getColor().equals(BLACK.getStringValue()))
+                .filter(carrr -> car.getColor().equals(BLACK.getStringValue()))
                 .collect(Collectors.toList());
 
         System.out.println(blackCarsUsingStream);
@@ -140,8 +140,6 @@ public class MainArray {
 //
 
 
-
-
-}
+    }}
 
 
