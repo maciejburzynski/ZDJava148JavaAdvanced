@@ -1,0 +1,10 @@
+"01-234, Warszawa, ul. Kwiatowa, 5, 2
+12-345, Kraków, ul. Słoneczna, 10, 15
+45-678, Wrocław, ul. Polna, 22, 4
+90-123, Łódź, ul. Ogrodowa, 7, 8
+56-789, Poznań, ul. Leśna, 14, 9
+78-901, Gdańsk, ul. Morska, 3, 7
+34-567, Katowice, ul. Górna, 18, 23
+89-012, Szczecin, ul. Wyzwolenia, 11, 6
+23-456, Lublin, ul. Kwiatowa, 2, 1
+67-890, Białystok, ul. Piękna, 9, 12
