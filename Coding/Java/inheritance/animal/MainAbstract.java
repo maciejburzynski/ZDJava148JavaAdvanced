@@ -5,8 +5,7 @@ import java.util.List;
 
 public class MainAbstract {
     public static void main(String[] args) {
-// Polymorphism
-// wiele form
+// Polymorphism - wiele form
 
         Animal lion = new Lion();
         Animal fish = new Fish();
@@ -24,10 +23,9 @@ public class MainAbstract {
         lion.breathe();
         lion.eat();
 
-    }
-
 // - Interfaces and abstract classes are similar and getting more similar.
-//   Both can have default implementation and fields BUT
-// - One class can extend only one class, but can implements as
+//   Both can have default implementation and fields
+// - One class can extend only one class, BUT can implements as
 //   many interfaces as you wish//
+    }
 }

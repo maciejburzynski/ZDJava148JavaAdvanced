@@ -2,7 +2,6 @@ package inheritance.animal;
 
 public class Lion extends Animal{
 
-
     @Override
     void breathe() {
         super.breathe();

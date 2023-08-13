@@ -5,7 +5,7 @@ public class Car {
 // protected
 // public
 // private
-// package-private - by default if no there is no modifier
+// package-private - by default if there is no modifier specified
 
     private String make;
     private String model;

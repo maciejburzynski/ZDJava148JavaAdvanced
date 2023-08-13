@@ -44,6 +44,7 @@ public class Main {
         carOptional.ifPresentOrElse(a -> a.drive(), () -> {
             throw new CarNotFoundException("ifPresentOrElse car not found");});
 // Try catch is not required because we throw Exception extending RuntimeException
+//        if extending Exception - handling is required.
 
 
     }

@@ -15,7 +15,9 @@ import static composition.car.Color.BLACK;
 public class Main {
 //  Streams
     /*
-    - Streams are lazy, but it is positive for application performance
+    - Streams are lazy, but it is good for application
+    performance -> They perform an action only when they have to
+
     - cleaner code
      */
 
@@ -101,13 +103,13 @@ public class Main {
 
         List<Car> carList = new ArrayList();
 
-        carList.add(car7);
         carList.add(car1);
         carList.add(car2);
         carList.add(car3);
         carList.add(car4);
         carList.add(car5);
         carList.add(car6);
+        carList.add(car7);
         System.out.println("Car List: ");
         System.out.println("_______________________________");
         System.out.println(carList);

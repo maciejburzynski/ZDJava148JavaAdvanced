@@ -13,7 +13,7 @@ import static composition.car.Color.*;
 - list is a bit slower than Array
 - is flexible - you don't have to define size 
 
-- The most popular is ArrayList. Also worth to think about LinkedList
+- The most popular is ArrayList. Also worth to consider LinkedList
 
  */
 

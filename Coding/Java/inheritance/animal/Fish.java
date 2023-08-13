@@ -1,7 +1,5 @@
 package inheritance.animal;
 
-import inheritance.player.DvdPlayer;
-
 public class Fish extends Animal {
 
     @Override
@@ -14,8 +12,3 @@ public class Fish extends Animal {
         System.out.println("I am eating small fishes!");
     }
 }
-
-
-// Animal
-// Fish
-// Saltwater / Freshwater
