@@ -22,7 +22,7 @@ public class Main {
     public static void main(String[] args) {
         Car car7 = new Car("Renault",
                 "Twingo",
-                BLUE.getStringValue(),
+                BLACK.getStringValue(),
                 "EL00100",
                 "4Y1SL65848Z411439",
                 new GearBox("Bosch",
@@ -113,7 +113,6 @@ public class Main {
         System.out.println(carList);
 
 
-
 // Old school
         List<Car> blackCars = new ArrayList<>();
         for (Car car : carList) {
@@ -134,6 +133,14 @@ public class Main {
         blackCarsUsingStream.get(0);
         System.out.println("Black cars using streams: ");
         System.out.println(blackCarsUsingStream);
+
+        System.out.println("Multifilter: ");
+
+        carList.stream()
+                .filter(car ->  car.getMake().equals("Renault")
+                            && car.getColor().equals(BLACK.getStringValue()))
+                .forEach(car -> System.out.println(car));
+
 
     }
 

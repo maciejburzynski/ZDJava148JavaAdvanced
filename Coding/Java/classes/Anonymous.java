@@ -10,6 +10,7 @@ import java.util.function.Predicate;
 
 public class Anonymous {
 
+    private Integer i = 10; // f in InteliJ which stands for Field
 
     FourWheeler fourWheeler = new FourWheeler() {
         @Override
