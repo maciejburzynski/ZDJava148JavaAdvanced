@@ -4,13 +4,13 @@ import homework.composition.Size;
 import homework.composition.Sole.Sole;
 
 public class Shoe {
-    private String name;
-    private Size size;
-    private Sole sole;
-    private boolean isLeather;
-    private boolean isComfortable;
+    protected String name;
+    protected Size1 size;
+    protected Sole sole;
+    protected boolean isLeather;
+    protected boolean isComfortable;
 
-    public Shoe(String name, Size size, Sole sole, boolean isLeather, boolean isComfortable) {
+    public Shoe(String name, Size1 size, Sole sole, boolean isLeather, boolean isComfortable) {
         this.name = name;
         this.size = size;
         this.sole = sole;
@@ -26,11 +26,11 @@ public class Shoe {
         this.name = name;
     }
 
-    public Size getSize() {
+    public Size1 getSize() {
         return size;
     }
 
-    public void setSize(Size size) {
+    public void setSize(Size1 size) {
         this.size = size;
     }
 

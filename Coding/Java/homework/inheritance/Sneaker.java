@@ -7,11 +7,11 @@ public class Sneaker extends Shoe {
     private String model;
     private String color;
 
-    public Sneaker(String name, Size size, Sole sole, boolean isLeather, boolean isComfortable) {
+    public Sneaker(String name, Size1 size, Sole sole, boolean isLeather, boolean isComfortable) {
         super(name, size, sole, isLeather, isComfortable);
     }
 
-    public Sneaker(String name, Size size, Sole sole, boolean isLeather, boolean isComfortable, String model, String color) {
+    public Sneaker(String name, Size1 size, Sole sole, boolean isLeather, boolean isComfortable, String model, String color) {
         super(name, size, sole, isLeather, isComfortable);
         this.model = model;
         this.color = color;

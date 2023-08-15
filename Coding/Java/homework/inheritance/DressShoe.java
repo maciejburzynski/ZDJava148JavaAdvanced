@@ -7,11 +7,11 @@ public class DressShoe extends Shoe{
     private double heelHeight;
     private Material material;
     private String color;
-    public DressShoe(String name, Size size, Sole sole, boolean isLeather, boolean isComfortable) {
+    public DressShoe(String name, Size1 size, Sole sole, boolean isLeather, boolean isComfortable) {
         super(name, size, sole, isLeather, isComfortable);
     }
 
-    public DressShoe(String name, Size size, Sole sole, boolean isLeather, boolean isComfortable, double heelHeight, Material material, String color) {
+    public DressShoe(String name, Size1 size, Sole sole, boolean isLeather, boolean isComfortable, double heelHeight, Material material, String color) {
         super(name, size, sole, isLeather, isComfortable);
         this.heelHeight = heelHeight;
         this.material = material;
