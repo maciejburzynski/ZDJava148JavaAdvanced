@@ -5,5 +5,5 @@ public enum Size {
     SMALL,
     MEDIUM,
     LARGE,
-    EXTRALARGE;
+    EXTRA_LARGE;
 }

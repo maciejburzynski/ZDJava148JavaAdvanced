@@ -4,7 +4,7 @@ public class Lumper {
 
     private String name;
     private int estimatedValue;
-    boolean isBroken;
+    private boolean isBroken;
     private Size size;
 
     public Lumper(String name, int estimatedValue, boolean isBroken, Size size) {

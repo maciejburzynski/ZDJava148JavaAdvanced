@@ -12,7 +12,7 @@ public class Main {
         Lumper playStation4 = new Lumper("playstation 4", 1200,false,Size.SMALL);
         Lumper bicycles = new Lumper("bicycles",1050,true,Size.MEDIUM);
         Lumper tools = new Lumper("tools" , 450,false,Size.SMALL);
-        Lumper furniture = new Lumper("furniture",900,false,Size.EXTRALARGE);
+        Lumper furniture = new Lumper("furniture",900,false,Size.EXTRA_LARGE);
         Lumper kitchenware = new Lumper("kitchenware",320,false,Size.SMALL);
 
         Garage garage01 = new Garage(1, 2.5,3.2,5.6,true,2,true);
