@@ -38,6 +38,11 @@ public class Sneaker extends Shoe {
         return "Sneaker{" +
                 "model='" + model + '\'' +
                 ", color='" + color + '\'' +
+                ", name='" + name + '\'' +
+                ", size=" + size +
+                ", sole=" + sole +
+                ", isLeather=" + isLeather +
+                ", isComfortable=" + isComfortable +
                 '}';
     }
 }

@@ -30,6 +30,12 @@ public class SportShoe extends Shoe {
         return "SportShoe{" +
                 "sportType=" + sportType +
                 ", color='" + color + '\'' +
+                ", name='" + name + '\'' +
+                ", size=" + size +
+                ", sole=" + sole +
+                ", isLeather=" + isLeather +
+                ", isComfortable=" + isComfortable +
                 '}';
     }
 }
+

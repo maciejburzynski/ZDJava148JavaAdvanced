@@ -48,6 +48,11 @@ public class DressShoe extends Shoe{
                 "heelHeight=" + heelHeight +
                 ", material=" + material +
                 ", color='" + color + '\'' +
+                ", name='" + name + '\'' +
+                ", size=" + size +
+                ", sole=" + sole +
+                ", isLeather=" + isLeather +
+                ", isComfortable=" + isComfortable +
                 '}';
     }
 }
